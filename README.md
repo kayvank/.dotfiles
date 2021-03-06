@@ -3,8 +3,7 @@ My dotfiles
 
 A solutions for storing dotfiles that requires no extra tooling, and no symlinks. 
 
-The technique consists in storing a Git bare repository in a "side" folder (like $HOME/.dotfiles) using a specially crafted alias:, 
-
+The technique consists in storing a Git bare repository in a "side" folder (like $HOME/.dotfiles) using a specially crafted alias:
 
 ``` sh
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
