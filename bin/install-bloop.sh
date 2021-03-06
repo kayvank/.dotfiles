@@ -1,0 +1,1 @@
+coursier install bloop --only-prebuilt=true

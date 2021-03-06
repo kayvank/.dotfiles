@@ -1,0 +1,36 @@
+IMAPAccount q2io
+# Address to connect to
+Host imap.gmail.com
+User kayvan@q2io.com
+PassCmd "gpg2 -q --for-your-eyes-only --no-tty -d ~/.authinfo.gpg | awk '/machine imap.gmail.com login kayvan@q2io.com/ {print $NF}'"
+SSLType IMAPS
+SSLVersions TLSv1.2
+AuthMechs PLAIN
+Timeout 120
+PipelineDepth 50
+# The following line should work. If get certificate errors, uncomment the two following lines and read the "Troubleshooting" section.
+## CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+IMAPStore q2io-mail-remote
+Account q2io
+
+
+MaildirStore q2io-mail-local
+SubFolders Verbatim
+Path ~/.mail/gmail/q2io/
+Inbox ~/.mail/gmail/q2io/Inbox
+# Inbox ~/.mail/Imkdir -p ~/.mail/gmail ~/.mail/lnunbox
+# The SubFolders option allows to represent all
+# IMAP subfolders as local subfolders
+
+# This section a "channel", a connection between remote and local
+Channel q2io-mail
+Master :q2io-mail-remote:
+Slave :q2io-mail-local:
+Patterns * ![Gmail]* "[Gmail]/Sent Mail" "[Gmail]/Starred" "[Gmail]/All Mail"
+Create Both
+SyncState *
+
+Expunge None
+CopyArrivalDate yes
+Sync All

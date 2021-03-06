@@ -1,0 +1,174 @@
+! ------------------------------------------------------------------------------
+! xterm standard arcolinux theme
+! ------------------------------------------------------------------------------
+! https://critical.ch/xterm/
+! ------------------------------------------------------------------------------
+
+xterm*font: 7x13
+xterm*faceName: Mono:size=14:antialias=false
+XTerm*renderFont: true
+xterm*loginShell: true
+xterm*vt100*geometry: 90x34
+xterm*saveLines: 2000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-color
+xterm*eightBitInput: false
+xterm*foreground: rgb:d9/d4/d4
+xterm*background: rgb:32/32/32
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:a8/00/00
+xterm*color2: rgb:00/a8/00
+xterm*color3: rgb:a8/54/00
+xterm*color4: rgb:5f/81/9d
+xterm*color5: rgb:a8/00/a8
+xterm*color6: rgb:00/a8/a8
+xterm*color7: rgb:70/78/80
+xterm*color8: rgb:54/54/54
+xterm*color9: rgb:fc/54/54
+xterm*color10: rgb:54/fc/54
+xterm*color11: rgb:fc/fc/54
+xterm*color12: rgb:81/a2/be
+xterm*color13: rgb:fc/54/fc
+xterm*color14: rgb:54/fc/fc
+xterm*color15: rgb:c5/c8/c6
+xterm*boldMode: false
+
+
+
+! ------------------------------------------------------------------------------
+! URxvt standard arcolinux theme - Reload with xrdb -merge ~/.Xresources
+! ------------------------------------------------------------------------------
+
+! Colorscheme
+
+! special
+*.foreground: #93a1a1
+*.background: #141c21
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #263640
+*.color8: #4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! green
+*.color2: #819400
+*.color10: #a4bd00
+
+! yellow
+*.color3: #b08500
+*.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+! magenta
+*.color5: #696ebf
+*.color13: #8086e8
+
+! cyan
+*.color6: #289c93
+*.color14: #33c5ba
+
+! white
+*.color7: #bfbaac
+*.color15: #fdf6e3
+
+!! URxvt Appearance
+
+! URxvt.font:  xft:DejaVu Sans Mono:pixelsize=16:antialias=true:hinting=true
+URxvt.font: xft:Source Code Pro:size=12:antialias=true:hinting=true
+! URxvt.boldFont: xft:DejaVu Sans Mono:bold:pixelsize=14:antialias=true:hinting=true
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+! URxvt.geometry: 112x44
+URxvt.geometry: 92x24
+URxvt.internalBorder: 14
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveline: 2048
+URxvt.scrollBar: false
+URxvt.scrollBar_right: false
+URxvt.urgentOnBell: true
+URxvt.depth: 24
+URxvt.iso14755: false
+
+!! Common Keybinds for Navigations
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
+
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select,resize-font
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+! ------------------------------------------------------------------------------
+
+
+
+! ------------------------------------------------------------------------------
+! UXTerm standard arcolinux theme
+! ------------------------------------------------------------------------------
+
+
+
+! termtype
+UXTerm*termName: xterm-256color
+
+
+UXTerm*cursorColor:        white
+UXTerm*VT100.geometry:     100x40
+UXTerm*font:               Monospace
+UXTerm*faceSize:		   14
+UXTerm*dynamicColors:      true
+UXTerm*utf8:               2
+UXTerm*eightBitInput:      true
+UXTerm*saveLines:          10000
+UXTerm*scrollKey:          true
+UXTerm*scrollTtyOutput:    false
+UXTerm*scrollBar:          false
+UXTerm*rightScrollBar:     false
+UXTerm*jumpScroll:         true
+UXTerm*multiScroll:        true
+UXTerm*toolBar:            false
+
+! fix colors
+UXTerm*background: rgb:63/63/63
+! UXTerm*foreground: rgb:00/00/00
+UXTerm*foreground: #000000
+UXTerm*color0: rgb:00/00/00
+UXTerm*color1: rgb:a8/00/00
+UXTerm*color2: rgb:00/a8/00
+UXTerm*color3: rgb:a8/54/00
+UXTerm*color4: rgb:00/00/a8
+UXTerm*color5: rgb:a8/00/a8
+UXTerm*color6: rgb:00/a8/a8
+UXTerm*color7: rgb:a8/a8/a8
+UXTerm*color8: rgb:54/54/54
+UXTerm*color9: rgb:fc/54/54
+UXTerm*color10: rgb:54/fc/54
+UXTerm*color11: rgb:fc/fc/54
+UXTerm*color12: rgb:54/54/fc
+UXTerm*color13: rgb:fc/54/fc
+UXTerm*color14: rgb:54/fc/fc
+UXTerm*color15: rgb:fc/fc/fc
+UXTerm*boldMode: false
+UXTerm*colorBDMode: true
+UXTerm*colorBD: rgb:3f/3f/3f

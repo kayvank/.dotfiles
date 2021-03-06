@@ -1,0 +1,3 @@
+#!/bin/bash
+# increase screen brighness by 10%
+brightnessctl set 10%+

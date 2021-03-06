@@ -1,0 +1,37 @@
+#+STARTUP: overview
+#+STARTUP: content
+#+STARTUP: showall
+#+STARTUP: showeverything
+
+* Blogs                                                           :elfeed:
+** entry-title: \(linux\|linus\|ubuntu\|kde\|gnome\)              :linux:
+** Math                                                            :math:
+*** Category Theory                                    :category-theory:
+**** [[https://www.logicmatters.net/feed/][logicmatters]]
+**** [[https://www.math3ma.com/blog/rss.xml][math3]]
+**** [[https://bartoszmilewski.com/feed/][category cafe]]
+**  Dev                                                             :dev:
+*** programming                                                   :prog:
+**** FP-literature                                                 :fp:
+***** [[http://okmij.org/ftp/rss.xml][okmij]]
+***** [[https://serokell.io/blog.atom.xml][serokell fp]]
+**** Purescript Dev
+***** [[https://qiita.com/kimagure/feed][Justin Wooa]]
+**** Scala Dev                                                 :scala:
+***** [[http://degoes.net/feed.xml][John DeGoes]]
+***** [[https://chrispenner.ca/atom.xml][SKB]]
+***** [[https://www.lihaoyi.com/feed][Li Haoyi]]
+***** [[https://chrispenner.ca/atom.xml][Chris Penner]]
+***** [[https://planet.haskell.org/rss20.xml][Planet Haskell]]
+***** [[https://mmhaskell.com/blog?format=rss][Monday Morning]]
+***** [[https://haskellweekly.news/haskell-weekly.atom][Haskell Weekly]]
+***** [[https://blog.poisson.chat/rss.xml][Li-yao XIA]]
+***** [[https://sandymaguire.me/atom.xml][Sandy McGuire]]
+[[https://elvishjerricco.github.io/feed.xml][Will Fancher-blog]]
+**** blockchain & crypto
+***** [[https://research.metastate.dev/rss/][metastate engineering]]
+**** FP jobs                                                    :fp jobs:
+***** [[https://www.google.com/alerts/feeds/13836586906187694484/7935102702992793897][haskell-jobs]]
+***** [[https://www.google.com/alerts/feeds/13836586906187694484/16142279480947260510][scala-job-alerts]]
+**** stack-overflow                                             :fp:questions:
+# ***** [[https://stackoverflow.com/feeds/tag?tagnames=scala&tagnames=haskell&tagname=flink&sort=newest][stack-overflow-rss]]
