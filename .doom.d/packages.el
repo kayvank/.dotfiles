@@ -52,3 +52,6 @@
 (package! zeal-at-point)
 (package! gnuplot)
 (package! erc-hl-nicks)
+(package! all-the-icons-ivy)
+(package! swiper)
+(package! lorem-ipsum) ;; generate text

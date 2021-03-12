@@ -7,7 +7,7 @@ set +e
 ##
 ## dotfiles related
 ##
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias sysuser='systemctl --user '
 alias vim='/usr/bin/nvim'

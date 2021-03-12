@@ -62,6 +62,23 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "<f6>") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "<f1> f") 'counsel-describe-function)
+(global-set-key (kbd "<f1> v") 'counsel-describe-variable)
+(global-set-key (kbd "<f1> o") 'counsel-describe-symbol)
+(global-set-key (kbd "<f1> l") 'counsel-find-library)
+(global-set-key (kbd "<f2> i") 'counsel-info-lookup-symbol)
+(global-set-key (kbd "<f2> u") 'counsel-unicode-char)
+(global-set-key (kbd "C-c g") 'counsel-git)
+(global-set-key (kbd "C-c j") 'counsel-git-grep)
+(global-set-key (kbd "C-c k") 'counsel-ag)
+(global-set-key (kbd "C-c l") 'counsel-locate)
+(global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
+(define-key minibuffer-local-map (kbd "C-r") 'counsel-minibuffer-history)
 
 (global-set-key (kbd "C-c +") 'image-increase-size)
 (global-set-key (kbd "C-c g") 'magit-file-dispatch)
@@ -73,14 +90,14 @@
 (global-set-key (kbd "<f8>") 'neotree-projectile-action)
 (global-set-key (kbd "S-<f8>") 'neotree-toggle)
 (global-set-key [f6] 'lsp-describe-thing-at-point)
-(global-set-key (kbd "C-c C-g") 'helm-projectile-grep)
+;; (global-set-key (kbd "C-c C-g") 'helm-projectile-grep)
+;; (global-set-key [f7] 'helm-projectile-grep)
 (global-set-key (kbd "C-c C-m i") 'lsp-ui-imenu)
 (global-set-key (kbd "C-c C-m I") 'lsp-ui-imenu--kill)
 (global-set-key (kbd "C-c C-m l") 'lsp-command-map)
 (global-set-key (kbd "C-c C-a") 'lsp-ui-sideline-apply-code-actions)
 (global-set-key (kbd "C-c C-m g") 'haskell-hoogle)
 (global-set-key (kbd "C-c C-h") 'haskell-hoogle-lookup-from-website)
-(global-set-key [f7] 'helm-projectile-grep)
 ;;
 ;; relie on build tool to reformat source code & refresh
 (global-auto-revert-mode t)
@@ -302,3 +319,7 @@
           (user-error "The current buffer is not a channel")))
     (user-error "You must first start ERC")))
 ;; (set-face-attribute 'aw-leading-char-face nil :height 400)
+(use-package! all-the-icons-ivy
+  :hook (
+         'after-init-hook 'all-the-icons-ivy-setup)
+  )

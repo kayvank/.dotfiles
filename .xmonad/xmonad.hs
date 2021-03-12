@@ -243,14 +243,13 @@ myLogHook = return ()
 -- By default, do nothing.
 
 myStartupHook = do
-  spawnOnce "/usr/bin/feh --bg-fill /home/kayvan/Pictures/Wallpapers/haskell.png"
-  spawnOnce "/home/kayvan/.local/bin/xmobar ~/.xmonad/xmobar.hs"
-  spawnOnce "/usr/bin/stalonetray"
-  spawnOnce "/usr/bin/nm-applet"
-  spawnOnce "/usr/bin/blueman-applet"
-  spawnOnce "/usr/bin/pa-applet"
-  spawnOnce "/usr/bin/optimus-manager-qt"
-  spawnOnce "/usr/bin/xscreensaver"
+  spawnOnce "stalonetray"
+  spawnOnce "feh --bg-fill /home/kayvan/Pictures/haskell.png"
+  spawnOnce "blueman-applet"
+  spawnOnce "nm-applet"
+  spawnOnce "pa-applet"
+  spawnOnce "xscreensaver"
+  spawnOnce "xmobar"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
