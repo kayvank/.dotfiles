@@ -1,3 +1,5 @@
+Deprecating this repo as I started using [home-manager](https://github.com/nix-community/home-manager)
+===
 My dotfiles
 ====
 
